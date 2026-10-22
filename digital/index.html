@@ -102,20 +102,24 @@ const NA=(()=>{
   const $=id=>document.getElementById(id);
   const v=$('v'),vi=$('vi'),vt=$('vt'),vy=$('vy'),vn=$('vn'),vx=$('vx'),vp=$('vprev'),vq=$('vnext');
   const src=(w,thumb)=>P+w.s+(thumb?'.thumb.jpg':'.jpg');
-  let seq=W.map((_,i)=>i),k=-1,back=null,tok=0;
+  let seq=W.map((_,i)=>i),k=-1,back=null,tok=0,curFull='';
+  const LOADED=new Set();
+  function warm(u,cb){if(!u)return;if(LOADED.has(u)){cb&&cb();return;}const im=new Image();im.onload=()=>{LOADED.add(u);cb&&cb();};im.src=u;}
+  const st=document.createElement('style');st.textContent='.v{touch-action:pinch-zoom;overscroll-behavior:contain}@media (hover:none){.v .v-x span{display:none}.v .v-x{padding:10px}}';document.head.append(st);
   function show(j){
     k=(j+seq.length)%seq.length;const w=W[seq[k]],t=++tok;
     v.style.setProperty('--vc',w.c);
     vi.classList.add('swap');
     v.style.setProperty('--r',(w.w/w.h).toFixed(4));v.style.setProperty('--nw',w.w+'px');
-    vi.src=src(w,true);vi.alt=w.t+(w.y?', '+w.y:'');
-    const hi=new Image();hi.onload=()=>{if(t===tok){vi.src=hi.src;}};hi.src=src(w);
+    const full=src(w);curFull=full;
+    if(LOADED.has(full))vi.src=full;else{vi.src=src(w,true);warm(full,()=>{if(t===tok&&curFull===full)vi.src=full;});}
+    vi.alt=w.t+(w.y?', '+w.y:'');
     requestAnimationFrame(()=>vi.classList.remove('swap'));
     vt.textContent=w.t;vy.textContent=w.y||'';vy.hidden=!w.y;
     if(vn)vn.textContent=seq.length>1?(k+1)+' of '+seq.length:'';
     vp.hidden=vq.hidden=seq.length<2;
     try{history.replaceState(null,'','#'+w.s);}catch(e){}
-    [k+1,k-1].forEach(n=>{const x=W[seq[(n+seq.length)%seq.length]];(new Image()).src=src(x);});
+    setTimeout(()=>[k+1,k-1].forEach(n=>warm(src(W[seq[(n+seq.length)%seq.length]]))),60);
     document.dispatchEvent(new CustomEvent('na:show',{detail:{i:seq[k],w}}));
   }
   function open(i,el,within){
@@ -130,7 +134,7 @@ const NA=(()=>{
   function close(){
     if(v.hidden)return;
     v.classList.remove('on');v.hidden=true;document.documentElement.classList.remove('v-open');
-    tok++;vi.removeAttribute('src');k=-1;
+    tok++;curFull='';vi.removeAttribute('src');vi.style.transform='';vi.style.opacity='';k=-1;
     try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}
     if(back&&back.focus)back.focus({preventScroll:true});
     document.dispatchEvent(new CustomEvent('na:close'));
@@ -147,12 +151,28 @@ const NA=(()=>{
     else if(e.key==='Tab'){const f=[...v.querySelectorAll('button:not([hidden])')];if(!f.length)return;
       const a=f.indexOf(document.activeElement);e.preventDefault();f[(a+(e.shiftKey?-1:1)+f.length)%f.length].focus();}
   });
-  // touch: swipe sideways to move, down to close
-  let x0=null,y0=0;
-  v.addEventListener('touchstart',e=>{if(e.touches.length!==1){x0=null;return;}x0=e.touches[0].clientX;y0=e.touches[0].clientY;},{passive:true});
-  v.addEventListener('touchend',e=>{if(x0===null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;
-    if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.2){show(k+(dx<0?1:-1));e.preventDefault();}
-    else if(dy>90&&Math.abs(dy)>Math.abs(dx)*1.5){close();e.preventDefault();}},{passive:false});
+  // touch: the painting follows the finger; swipe sideways to move, down to close (same feel as sadh.studio)
+  (function(){let x0=null,y0=0,dx=0,dy=0,t0=0,axis='',busy=false;
+    const EASE='cubic-bezier(.2,.75,.25,1)';
+    const reset=()=>{vi.style.transition='transform .24s '+EASE+', opacity .24s ease';vi.style.transform='';vi.style.opacity='';};
+    v.addEventListener('touchstart',e=>{if(busy||v.hidden||e.touches.length!==1){x0=null;return;}
+      x0=e.touches[0].clientX;y0=e.touches[0].clientY;dx=dy=0;axis='';t0=Date.now();vi.style.transition='none';},{passive:true});
+    v.addEventListener('touchmove',e=>{if(x0===null)return;if(e.touches.length!==1){x0=null;reset();return;}
+      dx=e.touches[0].clientX-x0;dy=e.touches[0].clientY-y0;
+      if(!axis&&(Math.abs(dx)>8||Math.abs(dy)>8))axis=Math.abs(dx)>Math.abs(dy)?'x':'y';
+      if(axis==='x'&&seq.length>1){e.preventDefault();vi.style.transform='translate3d('+dx+'px,0,0)';vi.style.opacity=String(1-Math.min(.35,Math.abs(dx)/innerWidth*.6));}
+      else if(axis==='y'){e.preventDefault();const d=Math.max(0,dy);vi.style.transform='translate3d(0,'+d+'px,0) scale('+(1-Math.min(.12,d/innerHeight*.3))+')';vi.style.opacity=String(1-Math.min(.6,d/innerHeight));}},{passive:false});
+    v.addEventListener('touchend',e=>{if(x0===null)return;x0=null;const fast=Date.now()-t0<280;
+      if(axis==='x'&&seq.length>1&&(Math.abs(dx)>innerWidth*.16||(fast&&Math.abs(dx)>35))){
+        e.preventDefault();const d=dx<0?1:-1;busy=true;
+        vi.style.transition='transform .15s ease-in, opacity .15s ease-in';vi.style.transform='translate3d('+(-d*innerWidth*.55)+'px,0,0)';vi.style.opacity='0';
+        setTimeout(()=>{vi.style.transition='none';vi.style.transform='translate3d('+(d*innerWidth*.3)+'px,0,0)';vi.style.opacity='0';show(k+d);
+          requestAnimationFrame(()=>requestAnimationFrame(()=>{reset();setTimeout(()=>{busy=false;},120);}));},150);}
+      else if(axis==='y'&&(dy>innerHeight*.16||(fast&&dy>50))){e.preventDefault();reset();close();}
+      else if(axis){e.preventDefault();reset();}
+      else reset();},{passive:false});
+    v.addEventListener('touchcancel',()=>{x0=null;reset();});
+  })();
   // deep link: nafsadh.art/#hahakar-4 (later /painting/hahakar-4/)
   function fromHash(){const s=decodeURIComponent(location.hash.slice(1));const i=W.findIndex(w=>w.s===s);if(i>=0)open(i,null);}
   addEventListener('load',fromHash);
