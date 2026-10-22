@@ -1,0 +1,863 @@
+{
+ "works": [
+  {
+   "s": "night-sky",
+   "t": "Night sky",
+   "y": null,
+   "w": 716,
+   "h": 900,
+   "tw": 716,
+   "th": 900,
+   "c": "#426a9c",
+   "v": true,
+   "p": 0.948,
+   "lo": 1
+  },
+  {
+   "s": "srot-11",
+   "t": "Srot 11",
+   "y": null,
+   "w": 1700,
+   "h": 2400,
+   "tw": 638,
+   "th": 900,
+   "c": "#dc9a6c",
+   "v": true,
+   "p": 0.1676
+  },
+  {
+   "s": "nagorik-lamppost",
+   "t": "Nagorik Lamppost",
+   "y": 2012,
+   "w": 2200,
+   "h": 2000,
+   "tw": 900,
+   "th": 818,
+   "c": "#3d63b1",
+   "v": true,
+   "p": 0.0337
+  },
+  {
+   "s": "akazhoka-03",
+   "t": "Akazhoka 3",
+   "y": 2002,
+   "w": 1509,
+   "h": 2400,
+   "tw": 566,
+   "th": 900,
+   "c": "#e3d46c",
+   "v": true,
+   "p": 0.367
+  },
+  {
+   "s": "dukkhobodh-01",
+   "t": "Dukkhobodh 1",
+   "y": null,
+   "w": 1696,
+   "h": 2400,
+   "tw": 636,
+   "th": 900,
+   "c": "#4a3d44",
+   "v": false,
+   "p": 0.1967
+  },
+  {
+   "s": "ninadbriqkho-03",
+   "t": "Ninadbriqkho 3",
+   "y": null,
+   "w": 1711,
+   "h": 2400,
+   "tw": 642,
+   "th": 900,
+   "c": "#bc7a6d",
+   "v": true,
+   "p": 0.2171
+  },
+  {
+   "s": "purple-flower",
+   "t": "Purple flower",
+   "y": null,
+   "w": 715,
+   "h": 900,
+   "tw": 715,
+   "th": 900,
+   "c": "#40bedb",
+   "v": true,
+   "p": 0.8358,
+   "lo": 1
+  },
+  {
+   "s": "hahakar-4",
+   "t": "Hahakar 4",
+   "y": 2005,
+   "w": 1692,
+   "h": 2400,
+   "tw": 634,
+   "th": 900,
+   "c": "#273f92",
+   "v": true,
+   "p": 0.2676
+  },
+  {
+   "s": "design-2-power-charger-2",
+   "t": "Design 2 (power charger 2)",
+   "y": 1999,
+   "w": 1673,
+   "h": 2400,
+   "tw": 627,
+   "th": 900,
+   "c": "#e07165",
+   "v": true,
+   "p": 0.0493
+  },
+  {
+   "s": "srot-10",
+   "t": "Srot 10",
+   "y": null,
+   "w": 1718,
+   "h": 2400,
+   "tw": 644,
+   "th": 900,
+   "c": "#ebdd50",
+   "v": true,
+   "p": 0.9999
+  },
+  {
+   "s": "stones",
+   "t": "Stones",
+   "y": null,
+   "w": 896,
+   "h": 1346,
+   "tw": 599,
+   "th": 900,
+   "c": "#8672ab",
+   "v": true,
+   "p": 0.0229,
+   "lo": 1
+  },
+  {
+   "s": "ochingroho-3",
+   "t": "Ochingroho 3",
+   "y": 2008,
+   "w": 2400,
+   "h": 1700,
+   "tw": 900,
+   "th": 638,
+   "c": "#76acc3",
+   "v": true,
+   "p": 0.1093
+  },
+  {
+   "s": "rongkhela-01",
+   "t": "RongKhela 1",
+   "y": null,
+   "w": 2400,
+   "h": 1765,
+   "tw": 900,
+   "th": 662,
+   "c": "#438cba",
+   "v": true,
+   "p": 0.439
+  },
+  {
+   "s": "self-portrait",
+   "t": "Self-portrait",
+   "y": null,
+   "w": 540,
+   "h": 720,
+   "tw": 540,
+   "th": 720,
+   "c": "#ebb54f",
+   "v": true,
+   "p": 0.1178,
+   "lo": 1
+  },
+  {
+   "s": "ninadbriqkho-56",
+   "t": "Ninadbriqkho 56",
+   "y": null,
+   "w": 784,
+   "h": 1128,
+   "tw": 626,
+   "th": 900,
+   "c": "#416ad8",
+   "v": true,
+   "p": 0.0952
+  },
+  {
+   "s": "akazhoka-02",
+   "t": "Akazhoka 2",
+   "y": 2002,
+   "w": 2400,
+   "h": 1499,
+   "tw": 900,
+   "th": 562,
+   "c": "#dc7f6d",
+   "v": true,
+   "p": 0.4357
+  },
+  {
+   "s": "mukut",
+   "t": "Mukut",
+   "y": null,
+   "w": 784,
+   "h": 1128,
+   "tw": 626,
+   "th": 900,
+   "c": "#ebd621",
+   "v": true,
+   "p": 0.1315
+  },
+  {
+   "s": "ochingroho-01",
+   "t": "Ochingroho 1",
+   "y": 2004,
+   "w": 1739,
+   "h": 2400,
+   "tw": 652,
+   "th": 900,
+   "c": "#74747a",
+   "v": false,
+   "p": 0.008
+  },
+  {
+   "s": "oil-pastel-abstract",
+   "t": "Oil pastel abstract",
+   "y": null,
+   "w": 675,
+   "h": 900,
+   "tw": 675,
+   "th": 900,
+   "c": "#ebd707",
+   "v": true,
+   "p": 0.8857,
+   "lo": 1
+  },
+  {
+   "s": "bornilgolok-colorful-planet",
+   "t": "BornilGolok (Colorful Planet)",
+   "y": 2004,
+   "w": 2400,
+   "h": 1704,
+   "tw": 900,
+   "th": 639,
+   "c": "#75a3ca",
+   "v": true,
+   "p": 0.1059
+  },
+  {
+   "s": "limbo-dance-01",
+   "t": "Limbo dance 1",
+   "y": null,
+   "w": 784,
+   "h": 1128,
+   "tw": 626,
+   "th": 900,
+   "c": "#ebd50d",
+   "v": true,
+   "p": 0.0997
+  },
+  {
+   "s": "hahakar-3",
+   "t": "Hahakar 3",
+   "y": 2005,
+   "w": 2400,
+   "h": 1665,
+   "tw": 900,
+   "th": 624,
+   "c": "#47383d",
+   "v": false,
+   "p": 0.114
+  },
+  {
+   "s": "ninadbriqkho-04",
+   "t": "Ninadbriqkho 4",
+   "y": null,
+   "w": 2400,
+   "h": 1677,
+   "tw": 900,
+   "th": 629,
+   "c": "#57a693",
+   "v": true,
+   "p": 0.0192
+  },
+  {
+   "s": "rays-1",
+   "t": "Rays 1",
+   "y": 2000,
+   "w": 2400,
+   "h": 1539,
+   "tw": 900,
+   "th": 577,
+   "c": "#cc1815",
+   "v": true,
+   "p": 0.0556
+  },
+  {
+   "s": "trio-01",
+   "t": "Trio 1",
+   "y": null,
+   "w": 784,
+   "h": 1128,
+   "tw": 626,
+   "th": 900,
+   "c": "#ea3c29",
+   "v": true,
+   "p": 0.0542
+  },
+  {
+   "s": "ochingroho-04",
+   "t": "Ochingroho 4",
+   "y": null,
+   "w": 1706,
+   "h": 2400,
+   "tw": 640,
+   "th": 900,
+   "c": "#6daad1",
+   "v": true,
+   "p": 0.0547
+  },
+  {
+   "s": "boctobyo",
+   "t": "Boctobyo",
+   "y": null,
+   "w": 2400,
+   "h": 1725,
+   "tw": 900,
+   "th": 647,
+   "c": "#cc7495",
+   "v": true,
+   "p": 0.0888
+  },
+  {
+   "s": "nissongota",
+   "t": "Nissongota",
+   "y": 2005,
+   "w": 1752,
+   "h": 2400,
+   "tw": 657,
+   "th": 900,
+   "c": "#ce7687",
+   "v": true,
+   "p": 0.0486
+  },
+  {
+   "s": "love-it-or-leave-it-1",
+   "t": "Love it or leave it 1",
+   "y": null,
+   "w": 1108,
+   "h": 514,
+   "tw": 900,
+   "th": 418,
+   "c": "#cd0000",
+   "v": true,
+   "p": 0.3377
+  },
+  {
+   "s": "sachi-5-gamejoy-of-a-boy",
+   "t": "Sachi 5: Gamejoy of a boy",
+   "y": 2004,
+   "w": 1720,
+   "h": 2400,
+   "tw": 645,
+   "th": 900,
+   "c": "#74757a",
+   "v": false,
+   "p": 0.0317
+  },
+  {
+   "s": "bikriti-06",
+   "t": "Bikriti 6",
+   "y": 2008,
+   "w": 2400,
+   "h": 1696,
+   "tw": 900,
+   "th": 636,
+   "c": "#ce8679",
+   "v": true,
+   "p": 0.0053
+  },
+  {
+   "s": "skeptic-dream-01",
+   "t": "Skeptic dream 1",
+   "y": null,
+   "w": 784,
+   "h": 1128,
+   "tw": 626,
+   "th": 900,
+   "c": "#d3d837",
+   "v": true,
+   "p": 0.0384
+  },
+  {
+   "s": "couplet-1",
+   "t": "Couplet 1",
+   "y": null,
+   "w": 784,
+   "h": 1128,
+   "tw": 626,
+   "th": 900,
+   "c": "#e15c77",
+   "v": true,
+   "p": 0.0327
+  },
+  {
+   "s": "ovibyakti-2",
+   "t": "Ovibyakti 2",
+   "y": 2009,
+   "w": 2400,
+   "h": 1659,
+   "tw": 900,
+   "th": 622,
+   "c": "#79c9c2",
+   "v": true,
+   "p": 0.0396
+  },
+  {
+   "s": "symmetric-asymmetry",
+   "t": "Symmetric Asymmetry",
+   "y": 2007,
+   "w": 2400,
+   "h": 1817,
+   "tw": 900,
+   "th": 682,
+   "c": "#79787a",
+   "v": false,
+   "p": 0.0
+  },
+  {
+   "s": "swopno-5-sukhoswopno",
+   "t": "Swopno 5 (sukhoswopno)",
+   "y": 2001,
+   "w": 1492,
+   "h": 2400,
+   "tw": 559,
+   "th": 900,
+   "c": "#7a7368",
+   "v": false,
+   "p": 0.0257
+  },
+  {
+   "s": "shiver",
+   "t": "Shiver",
+   "y": null,
+   "w": 784,
+   "h": 1128,
+   "tw": 626,
+   "th": 900,
+   "c": "#7a7461",
+   "v": false,
+   "p": 0.0016
+  },
+  {
+   "s": "sheit-01",
+   "t": "Sheit 1",
+   "y": null,
+   "w": 1556,
+   "h": 2400,
+   "tw": 583,
+   "th": 900,
+   "c": "#b18c47",
+   "v": true,
+   "p": 0.0383
+  },
+  {
+   "s": "design-1-power-charger-1",
+   "t": "Design 1 (power charger 1)",
+   "y": 1999,
+   "w": 1717,
+   "h": 2400,
+   "tw": 644,
+   "th": 900,
+   "c": "#e8d1a1",
+   "v": true,
+   "p": 0.034
+  },
+  {
+   "s": "amader-bedona-hasimukher-arale-1",
+   "t": "Amader Bedona Hasimukher Arale 1",
+   "y": null,
+   "w": 1521,
+   "h": 2400,
+   "tw": 570,
+   "th": 900,
+   "c": "#6d77b4",
+   "v": true,
+   "p": 0.0252
+  },
+  {
+   "s": "ba-dha-2",
+   "t": "Ba~dha 2",
+   "y": null,
+   "w": 2400,
+   "h": 1522,
+   "tw": 900,
+   "th": 571,
+   "c": "#becf75",
+   "v": true,
+   "p": 0.0602
+  },
+  {
+   "s": "ghum-1",
+   "t": "Ghum 1",
+   "y": null,
+   "w": 2400,
+   "h": 1523,
+   "tw": 900,
+   "th": 571,
+   "c": "#cd9c55",
+   "v": true,
+   "p": 0.0336
+  },
+  {
+   "s": "sachi-6-aboddho-bokar-anondo",
+   "t": "Sachi 6: Aboddho Bokar Anondo",
+   "y": 2004,
+   "w": 2400,
+   "h": 1700,
+   "tw": 900,
+   "th": 638,
+   "c": "#6c687a",
+   "v": false,
+   "p": 0.0061
+  },
+  {
+   "s": "onuvuti-1",
+   "t": "Onuvuti 1",
+   "y": 2004,
+   "w": 2400,
+   "h": 1700,
+   "tw": 900,
+   "th": 638,
+   "c": "#74717a",
+   "v": false,
+   "p": 0.0223
+  },
+  {
+   "s": "onuvuuti-02",
+   "t": "Onuvuuti 2",
+   "y": null,
+   "w": 1916,
+   "h": 2400,
+   "tw": 718,
+   "th": 900,
+   "c": "#7a7876",
+   "v": false,
+   "p": 0.0154
+  },
+  {
+   "s": "onuvutigulo-3",
+   "t": "Onuvutigulo 3",
+   "y": null,
+   "w": 1543,
+   "h": 2400,
+   "tw": 578,
+   "th": 900,
+   "c": "#7a7678",
+   "v": false,
+   "p": 0.0061
+  },
+  {
+   "s": "nissongota-1",
+   "t": "Nissongota 1",
+   "y": 2001,
+   "w": 1498,
+   "h": 2400,
+   "tw": 562,
+   "th": 900,
+   "c": "#7a7065",
+   "v": false,
+   "p": 0.0065
+  },
+  {
+   "s": "nissongotar-songo",
+   "t": "Nissongotar Songo",
+   "y": 2001,
+   "w": 2400,
+   "h": 1440,
+   "tw": 900,
+   "th": 540,
+   "c": "#7a7174",
+   "v": false,
+   "p": 0.0053
+  },
+  {
+   "s": "mayazal-1",
+   "t": "Mayazal 1",
+   "y": null,
+   "w": 1509,
+   "h": 2400,
+   "tw": 566,
+   "th": 900,
+   "c": "#cf778a",
+   "v": true,
+   "p": 0.0144
+  },
+  {
+   "s": "ochingroho-2",
+   "t": "Ochingroho 2",
+   "y": 2002,
+   "w": 1708,
+   "h": 2400,
+   "tw": 640,
+   "th": 900,
+   "c": "#77777a",
+   "v": false,
+   "p": 0.0013
+  },
+  {
+   "s": "vranti-3",
+   "t": "Vranti 3",
+   "y": 2001,
+   "w": 1505,
+   "h": 2400,
+   "tw": 564,
+   "th": 900,
+   "c": "#6d727a",
+   "v": false,
+   "p": 0.0166
+  },
+  {
+   "s": "vagyo",
+   "t": "Vagyo",
+   "y": 2002,
+   "w": 1502,
+   "h": 2400,
+   "tw": 563,
+   "th": 900,
+   "c": "#7a7475",
+   "v": false,
+   "p": 0.013
+  },
+  {
+   "s": "bikriti-4",
+   "t": "Bikriti 4",
+   "y": 2001,
+   "w": 1495,
+   "h": 2400,
+   "tw": 560,
+   "th": 900,
+   "c": "#736f7a",
+   "v": false,
+   "p": 0.0096
+  },
+  {
+   "s": "akajhoka-5",
+   "t": "Akajhoka 5",
+   "y": null,
+   "w": 1498,
+   "h": 2400,
+   "tw": 562,
+   "th": 900,
+   "c": "#76737a",
+   "v": false,
+   "p": 0.0042
+  },
+  {
+   "s": "solitude",
+   "t": "Solitude",
+   "y": null,
+   "w": 784,
+   "h": 1128,
+   "tw": 626,
+   "th": 900,
+   "c": "#7a7a79",
+   "v": false,
+   "p": 0.0158
+  },
+  {
+   "s": "hahakar-1",
+   "t": "Hahakar 1",
+   "y": 2003,
+   "w": 1697,
+   "h": 2400,
+   "tw": 636,
+   "th": 900,
+   "c": "#7a787a",
+   "v": false,
+   "p": 0.0031
+  },
+  {
+   "s": "hahakar-2",
+   "t": "Hahakar 2",
+   "y": 2003,
+   "w": 1694,
+   "h": 2400,
+   "tw": 635,
+   "th": 900,
+   "c": "#7a7779",
+   "v": false,
+   "p": 0.0041
+  },
+  {
+   "s": "spectral",
+   "t": "Spectral",
+   "y": null,
+   "w": 1824,
+   "h": 2400,
+   "tw": 684,
+   "th": 900,
+   "c": "#7a7a79",
+   "v": false,
+   "p": 0.0012
+  }
+ ],
+ "series": [
+  {
+   "n": "Ochingroho",
+   "g": "alien planets",
+   "i": [
+    49,
+    17,
+    11,
+    25
+   ],
+   "f": [
+    11,
+    25,
+    17,
+    49
+   ],
+   "y0": 2002,
+   "y1": 2008
+  },
+  {
+   "n": "Hahakar",
+   "g": null,
+   "i": [
+    55,
+    56,
+    21,
+    7
+   ],
+   "f": [
+    7,
+    21,
+    56,
+    55
+   ],
+   "y0": 2003,
+   "y1": 2005
+  },
+  {
+   "n": "Nissongota",
+   "g": null,
+   "i": [
+    46,
+    47,
+    27
+   ],
+   "f": [
+    27,
+    46,
+    47
+   ],
+   "y0": 2001,
+   "y1": 2005
+  },
+  {
+   "n": "Akazhoka",
+   "g": null,
+   "i": [
+    15,
+    3,
+    53
+   ],
+   "f": [
+    15,
+    3,
+    53
+   ],
+   "y0": 2002,
+   "y1": 2002
+  },
+  {
+   "n": "Onuvuti",
+   "g": null,
+   "i": [
+    43,
+    44,
+    45
+   ],
+   "f": [
+    43,
+    44,
+    45
+   ],
+   "y0": 2004,
+   "y1": 2004
+  },
+  {
+   "n": "Ninadbriqkho",
+   "g": null,
+   "i": [
+    5,
+    22,
+    14
+   ],
+   "f": [
+    5,
+    14,
+    22
+   ],
+   "y0": null,
+   "y1": null
+  },
+  {
+   "n": "Bikriti",
+   "g": null,
+   "i": [
+    52,
+    30
+   ],
+   "f": [
+    30,
+    52
+   ],
+   "y0": 2001,
+   "y1": 2008
+  },
+  {
+   "n": "Sachi",
+   "g": null,
+   "i": [
+    29,
+    42
+   ],
+   "f": [
+    29,
+    42
+   ],
+   "y0": 2004,
+   "y1": 2004
+  },
+  {
+   "n": "Srot",
+   "g": null,
+   "i": [
+    9,
+    1
+   ],
+   "f": [
+    9,
+    1
+   ],
+   "y0": null,
+   "y1": null
+  },
+  {
+   "n": "Power charger",
+   "g": null,
+   "i": [
+    38,
+    8
+   ],
+   "f": [
+    8,
+    38
+   ],
+   "y0": 1999,
+   "y1": 1999
+  }
+ ]
+}

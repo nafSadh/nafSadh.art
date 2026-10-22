@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>nafsadh.art · by hand</title>
+<meta name="description" content="Paintings and drawings by nafSadh, by hand, on paper.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap" rel="stylesheet">
+<style>
+:root{--serif:'EB Garamond',Georgia,serif;--serif-alt:'Fraunces',Georgia,serif;
+  --sans:'Jost',-apple-system,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;--throw-x:50%;--throw-y:32%}
+[data-theme="light"]{--bg:#f5f7fb;--bg-2:#ffffff;--bg-3:#edf0f7;--bg-4:#e2e7f1;--ink:#10141d;--text:#39414f;
+  --dim:#5c6576;--faint:#969eb0;--border:#d7dce8;--border-hi:#c0c8d8;--accent:#7c3aed;--accent-soft:#7c3aed12;--link:#2e6ab4;--grain-o:.013;
+  --bruple:color-mix(in srgb,var(--accent) 58%,var(--link) 42%);color-scheme:light}
+[data-theme="dark"]{--bg:#0b0e18;--bg-2:#0f1322;--bg-3:#151b30;--bg-4:#1d2442;--ink:#eef1fa;--text:#8490aa;
+  --dim:#6a7594;--faint:#3b466a;--border:#1c2440;--border-hi:#283558;--accent:#9b7aed;--accent-soft:#9b7aed1f;--link:#7aa2f7;--grain-o:.025;
+  --bruple:color-mix(in srgb,var(--accent) 58%,var(--link) 42%);color-scheme:dark}
+*{margin:0;padding:0;box-sizing:border-box}[hidden]{display:none!important}
+html{background:var(--bg)}html.v-open{overflow:hidden}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative;transition:background .45s ease,color .3s ease}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:var(--grain-o);z-index:9998;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background:
+  radial-gradient(ellipse 72% 60% at 12% 16%,color-mix(in srgb,var(--link),transparent 86%),transparent 64%),
+  radial-gradient(ellipse 68% 55% at 86% 30%,color-mix(in srgb,var(--accent),transparent 86%),transparent 66%),
+  radial-gradient(ellipse 78% 68% at 76% 88%,color-mix(in srgb,var(--bruple),transparent 88%),transparent 70%)}
+[data-theme="light"] body::before{opacity:.5}
+a{color:inherit}
+:focus-visible{outline:1px solid var(--accent);outline-offset:3px}
+.throwlight{position:fixed;inset:0;z-index:0;pointer-events:none;transition:background 220ms ease;
+  background:radial-gradient(560px circle at var(--throw-x) var(--throw-y),color-mix(in srgb,var(--accent),transparent 86%) 0%,color-mix(in srgb,var(--link),transparent 92%) 38%,transparent 66%)}
+@media(prefers-reduced-motion:reduce){.throwlight{transition:none}}
+
+.cbtn{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);
+  background:color-mix(in srgb,var(--bg-2),transparent 25%);border:1px solid var(--border);padding:6px 10px;
+  cursor:pointer;backdrop-filter:blur(8px);transition:color .2s,border-color .2s;text-decoration:none;line-height:1.4;display:inline-flex;align-items:center;gap:6px}
+.cbtn:hover{color:var(--accent);border-color:var(--accent)}
+.cbtn.on{color:var(--accent);border-color:color-mix(in srgb,var(--accent),transparent 40%);background:var(--accent-soft)}
+.cbtn span{color:var(--faint)}
+.cbtn.theme-btn{width:31px;padding:0;justify-content:center;height:29px}
+.cbtn.theme-btn svg{width:14px;height:14px;display:none}
+[data-theme="dark"] .theme-btn .ico-sun{display:block}[data-theme="light"] .theme-btn .ico-moon{display:block}
+
+.mast{max-width:1320px;margin:0 auto;padding:96px 22px 36px;position:relative;z-index:1}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.kicker::before{content:'';width:44px;height:1px;background:var(--accent)}
+.title{font-family:var(--serif-alt);font-style:italic;font-weight:500;color:var(--ink);font-size:clamp(60px,9.5vw,124px);line-height:.92;letter-spacing:-.025em;margin-bottom:24px}
+.title em{font-style:italic;color:var(--accent);font-weight:400}
+.lede{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2vw,23px);color:var(--text);line-height:1.5;max-width:640px}
+.lede a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--border-hi)}.lede a:hover{border-bottom-color:var(--accent)}
+.mast-meta{font-family:var(--mono);font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--dim);margin-top:34px;padding-top:20px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:4px 22px}
+.mast-meta b{color:var(--ink);font-weight:500}
+
+.bar{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg),transparent 18%);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.bar-in{max-width:1320px;margin:0 auto;padding:10px 22px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.rooms{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 380px;min-width:0}
+.ctl{display:flex;align-items:center;gap:6px}
+.count{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);white-space:nowrap;margin:0 6px}
+@media(max-width:700px){.rooms{flex:1 1 100%}.count{display:none}.ctl{flex:1 1 100%}}
+
+.room{position:relative;z-index:1;max-width:1320px;margin:0 auto;padding:44px 22px 0}
+.sub{font-family:var(--mono);font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--dim);display:flex;align-items:baseline;gap:10px;margin:40px 0 14px}
+.sub:first-child{margin-top:0}
+.sub b{font-family:var(--serif-alt);font-style:italic;font-weight:500;font-size:22px;letter-spacing:0;text-transform:none;color:var(--ink)}
+.wall{display:flex;flex-direction:column;gap:var(--rowgap,22px)}
+.grow{display:flex;justify-content:center;align-items:flex-start;gap:var(--colgap,16px)}
+.frame{position:relative;overflow:hidden;background:var(--bg-3);cursor:zoom-in;border-radius:2px;flex:0 0 auto;border:0;padding:0;display:block;
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--accent),transparent 88%),0 18px 40px -22px rgba(0,0,0,.4)}
+[data-theme="dark"] .frame{box-shadow:0 0 0 1px color-mix(in srgb,var(--accent),transparent 90%),0 24px 56px -28px rgba(0,0,0,.85)}
+.frame:hover{box-shadow:0 0 0 1px color-mix(in srgb,var(--accent),transparent 55%),0 28px 64px -26px rgba(0,0,0,.6)}
+.frame img{width:100%;height:auto;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .5s}
+.frame:hover img{transform:scale(1.035);filter:brightness(1.04)}
+.frame .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:30px 12px 10px;opacity:0;transform:translateY(8px);text-align:left;
+  transition:opacity .3s,transform .3s;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+.frame:hover .cap,.frame:focus-visible .cap{opacity:1;transform:none}
+.cap b{display:block;font-family:var(--serif);font-style:italic;font-weight:500;font-size:15px;color:#fff;line-height:1.25}
+.cap i{font-family:var(--mono);font-style:normal;font-size:9.5px;letter-spacing:.8px;color:rgba(255,255,255,.75)}
+@media(hover:none){.frame .cap{display:none}}
+
+.stroke{display:block;height:2px;width:230px;margin:70px auto 0;background:linear-gradient(90deg,var(--accent),var(--bruple),var(--link),var(--accent));opacity:.42}
+.colophon{max-width:1320px;margin:30px auto 0;padding:34px 22px 90px;text-align:center;position:relative;z-index:1}
+.colophon em{font-family:var(--serif-alt);font-style:italic;font-weight:500;font-size:32px;color:var(--accent);display:block;margin-bottom:14px}
+.colophon a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--border-hi)}
+.colophon .c-meta{font-family:var(--mono);font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:var(--dim);line-height:2.1}
+@media(max-width:600px){.mast{padding:84px 14px 30px}.room,.bar-in{padding-left:14px;padding-right:14px}}
+
+/* viewer: studio lantern */
+.v{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .25s ease;
+  --vw-max:calc(100vw - 150px);--vh-max:calc(100svh - 150px);
+  background:radial-gradient(70vmax circle at 50% 44%,color-mix(in srgb,var(--vc),transparent 74%) 0%,color-mix(in srgb,var(--vc),transparent 90%) 40%,transparent 72%),var(--bg)}
+.v.on{opacity:1}
+.v-fig{display:flex;flex-direction:column;align-items:center;gap:18px;cursor:zoom-out}
+.v-fig img{display:block;width:min(var(--vw-max),calc(var(--vh-max) * var(--r)),calc(var(--nw) * 1.4));height:auto;aspect-ratio:var(--r);transition:opacity .2s;
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--ink),transparent 92%),0 0 90px -16px color-mix(in srgb,var(--vc),transparent 50%),0 44px 120px color-mix(in srgb,var(--ink),transparent 80%)}
+.v-fig img.swap{opacity:.85}
+.v-cap{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;justify-content:center;text-align:center;padding:0 16px}
+.v-t{font-family:var(--serif-alt);font-style:italic;font-weight:500;font-size:clamp(17px,2vw,21px);color:var(--ink)}
+.v-y,.v-n{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;color:var(--dim)}
+.v-n{color:var(--faint)}
+.v-x{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));right:18px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--dim);background:none;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:6px;padding:6px;z-index:3}
+.v-x:hover{color:var(--accent)}
+.v-x svg,.v-nav svg{width:12px;height:12px}
+.v-nav{position:fixed;top:0;bottom:0;width:72px;border:0;background:none;cursor:pointer;color:var(--dim);display:flex;align-items:center;justify-content:center;z-index:2}
+.v-nav svg{width:22px;height:22px;opacity:.6;transition:opacity .2s,transform .2s}
+.v-nav:hover{color:var(--accent)}.v-nav:hover svg{opacity:1}
+.v-prev{left:0}.v-next{right:0}
+@media(max-width:680px){.v{--vw-max:calc(100vw - 24px);--vh-max:calc(100svh - 130px)}.v-nav{width:18%}.v-nav svg{display:none}.v-x span{display:none}}
+@media(prefers-reduced-motion:reduce){.v,.frame img,.frame .cap{transition:none}}
+</style>
+</head>
+<body data-p="../painting/">
+<div class="throwlight"></div>
+<header class="mast">
+  <div class="kicker">nafsadh.art</div>
+  <h1 class="title">paint<em>ings</em></h1>
+  <p class="lede" id="meta"></p>
+</header>
+<nav class="bar" aria-label="Rooms"><div class="bar-in">
+  <div class="rooms">
+    <a class="cbtn on" href="./" aria-current="page">paintings <span id="n"></span></a>
+    <a class="cbtn" href="../digital/">digital &#8599;</a>
+    <a class="cbtn" href="https://sadh.studio">sadh.studio &#8599;</a>
+  </div>
+  <div class="ctl">
+    <button class="cbtn on" type="button" id="o-sel" aria-pressed="true">selected</button>
+    <button class="cbtn" type="button" id="o-year" aria-pressed="false">by year</button>
+    <span class="count" id="count"></span>
+    <button class="cbtn theme-btn" id="theme" type="button" aria-label="Switch light or dark"><svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.6"/><path d="M12 1.7v2M12 20.3v2M4.3 4.3l1.4 1.4M18.3 18.3l1.4 1.4M1.7 12h2M20.3 12h2M4.3 19.7l1.4-1.4M18.3 5.7l1.4-1.4"/></svg><svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg></button>
+  </div>
+</div></nav>
+<main class="room" id="room"></main>
+<div class="stroke"></div>
+<footer class="colophon"><em>nafsadh.art</em><div class="c-meta"><a href="https://nafsadh.com">nafSadh.com</a> &middot; <a href="https://sadh.ink">sadh.ink</a> &middot; <a href="https://sadh.studio">sadh.studio</a></div></footer>
+
+<div class="v" id="v" role="dialog" aria-modal="true" aria-labelledby="vt" hidden>
+  <button class="v-x" id="vx" type="button" aria-label="Close"><span>esc</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="v-nav v-prev" id="vprev" type="button" aria-label="Previous painting"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M15 4l-8 8 8 8"/></svg></button>
+  <button class="v-nav v-next" id="vnext" type="button" aria-label="Next painting"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M9 4l8 8-8 8"/></svg></button>
+  <figure class="v-fig"><img id="vi" alt=""><figcaption class="v-cap"><span class="v-t" id="vt"></span><span class="v-y" id="vy"></span><span class="v-n" id="vn"></span></figcaption></figure>
+</div>
+<script id="works" type="application/json">{"works":[{"s":"night-sky","t":"Night sky","y":null,"w":716,"h":900,"tw":716,"th":900,"c":"#426a9c","v":true,"p":0.948,"lo":1},{"s":"srot-11","t":"Srot 11","y":null,"w":1700,"h":2400,"tw":638,"th":900,"c":"#dc9a6c","v":true,"p":0.1676},{"s":"nagorik-lamppost","t":"Nagorik Lamppost","y":2012,"w":2200,"h":2000,"tw":900,"th":818,"c":"#3d63b1","v":true,"p":0.0337},{"s":"akazhoka-03","t":"Akazhoka 3","y":2002,"w":1509,"h":2400,"tw":566,"th":900,"c":"#e3d46c","v":true,"p":0.367},{"s":"dukkhobodh-01","t":"Dukkhobodh 1","y":null,"w":1696,"h":2400,"tw":636,"th":900,"c":"#4a3d44","v":false,"p":0.1967},{"s":"ninadbriqkho-03","t":"Ninadbriqkho 3","y":null,"w":1711,"h":2400,"tw":642,"th":900,"c":"#bc7a6d","v":true,"p":0.2171},{"s":"purple-flower","t":"Purple flower","y":null,"w":715,"h":900,"tw":715,"th":900,"c":"#40bedb","v":true,"p":0.8358,"lo":1},{"s":"hahakar-4","t":"Hahakar 4","y":2005,"w":1692,"h":2400,"tw":634,"th":900,"c":"#273f92","v":true,"p":0.2676},{"s":"design-2-power-charger-2","t":"Design 2 (power charger 2)","y":1999,"w":1673,"h":2400,"tw":627,"th":900,"c":"#e07165","v":true,"p":0.0493},{"s":"srot-10","t":"Srot 10","y":null,"w":1718,"h":2400,"tw":644,"th":900,"c":"#ebdd50","v":true,"p":0.9999},{"s":"stones","t":"Stones","y":null,"w":896,"h":1346,"tw":599,"th":900,"c":"#8672ab","v":true,"p":0.0229,"lo":1},{"s":"ochingroho-3","t":"Ochingroho 3","y":2008,"w":2400,"h":1700,"tw":900,"th":638,"c":"#76acc3","v":true,"p":0.1093},{"s":"rongkhela-01","t":"RongKhela 1","y":null,"w":2400,"h":1765,"tw":900,"th":662,"c":"#438cba","v":true,"p":0.439},{"s":"self-portrait","t":"Self-portrait","y":null,"w":540,"h":720,"tw":540,"th":720,"c":"#ebb54f","v":true,"p":0.1178,"lo":1},{"s":"ninadbriqkho-56","t":"Ninadbriqkho 56","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#416ad8","v":true,"p":0.0952},{"s":"akazhoka-02","t":"Akazhoka 2","y":2002,"w":2400,"h":1499,"tw":900,"th":562,"c":"#dc7f6d","v":true,"p":0.4357},{"s":"mukut","t":"Mukut","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#ebd621","v":true,"p":0.1315},{"s":"ochingroho-01","t":"Ochingroho 1","y":2004,"w":1739,"h":2400,"tw":652,"th":900,"c":"#74747a","v":false,"p":0.008},{"s":"oil-pastel-abstract","t":"Oil pastel abstract","y":null,"w":675,"h":900,"tw":675,"th":900,"c":"#ebd707","v":true,"p":0.8857,"lo":1},{"s":"bornilgolok-colorful-planet","t":"BornilGolok (Colorful Planet)","y":2004,"w":2400,"h":1704,"tw":900,"th":639,"c":"#75a3ca","v":true,"p":0.1059},{"s":"limbo-dance-01","t":"Limbo dance 1","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#ebd50d","v":true,"p":0.0997},{"s":"hahakar-3","t":"Hahakar 3","y":2005,"w":2400,"h":1665,"tw":900,"th":624,"c":"#47383d","v":false,"p":0.114},{"s":"ninadbriqkho-04","t":"Ninadbriqkho 4","y":null,"w":2400,"h":1677,"tw":900,"th":629,"c":"#57a693","v":true,"p":0.0192},{"s":"rays-1","t":"Rays 1","y":2000,"w":2400,"h":1539,"tw":900,"th":577,"c":"#cc1815","v":true,"p":0.0556},{"s":"trio-01","t":"Trio 1","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#ea3c29","v":true,"p":0.0542},{"s":"ochingroho-04","t":"Ochingroho 4","y":null,"w":1706,"h":2400,"tw":640,"th":900,"c":"#6daad1","v":true,"p":0.0547},{"s":"boctobyo","t":"Boctobyo","y":null,"w":2400,"h":1725,"tw":900,"th":647,"c":"#cc7495","v":true,"p":0.0888},{"s":"nissongota","t":"Nissongota","y":2005,"w":1752,"h":2400,"tw":657,"th":900,"c":"#ce7687","v":true,"p":0.0486},{"s":"love-it-or-leave-it-1","t":"Love it or leave it 1","y":null,"w":1108,"h":514,"tw":900,"th":418,"c":"#cd0000","v":true,"p":0.3377},{"s":"sachi-5-gamejoy-of-a-boy","t":"Sachi 5: Gamejoy of a boy","y":2004,"w":1720,"h":2400,"tw":645,"th":900,"c":"#74757a","v":false,"p":0.0317},{"s":"bikriti-06","t":"Bikriti 6","y":2008,"w":2400,"h":1696,"tw":900,"th":636,"c":"#ce8679","v":true,"p":0.0053},{"s":"skeptic-dream-01","t":"Skeptic dream 1","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#d3d837","v":true,"p":0.0384},{"s":"couplet-1","t":"Couplet 1","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#e15c77","v":true,"p":0.0327},{"s":"ovibyakti-2","t":"Ovibyakti 2","y":2009,"w":2400,"h":1659,"tw":900,"th":622,"c":"#79c9c2","v":true,"p":0.0396},{"s":"symmetric-asymmetry","t":"Symmetric Asymmetry","y":2007,"w":2400,"h":1817,"tw":900,"th":682,"c":"#79787a","v":false,"p":0.0},{"s":"swopno-5-sukhoswopno","t":"Swopno 5 (sukhoswopno)","y":2001,"w":1492,"h":2400,"tw":559,"th":900,"c":"#7a7368","v":false,"p":0.0257},{"s":"shiver","t":"Shiver","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#7a7461","v":false,"p":0.0016},{"s":"sheit-01","t":"Sheit 1","y":null,"w":1556,"h":2400,"tw":583,"th":900,"c":"#b18c47","v":true,"p":0.0383},{"s":"design-1-power-charger-1","t":"Design 1 (power charger 1)","y":1999,"w":1717,"h":2400,"tw":644,"th":900,"c":"#e8d1a1","v":true,"p":0.034},{"s":"amader-bedona-hasimukher-arale-1","t":"Amader Bedona Hasimukher Arale 1","y":null,"w":1521,"h":2400,"tw":570,"th":900,"c":"#6d77b4","v":true,"p":0.0252},{"s":"ba-dha-2","t":"Ba~dha 2","y":null,"w":2400,"h":1522,"tw":900,"th":571,"c":"#becf75","v":true,"p":0.0602},{"s":"ghum-1","t":"Ghum 1","y":null,"w":2400,"h":1523,"tw":900,"th":571,"c":"#cd9c55","v":true,"p":0.0336},{"s":"sachi-6-aboddho-bokar-anondo","t":"Sachi 6: Aboddho Bokar Anondo","y":2004,"w":2400,"h":1700,"tw":900,"th":638,"c":"#6c687a","v":false,"p":0.0061},{"s":"onuvuti-1","t":"Onuvuti 1","y":2004,"w":2400,"h":1700,"tw":900,"th":638,"c":"#74717a","v":false,"p":0.0223},{"s":"onuvuuti-02","t":"Onuvuuti 2","y":null,"w":1916,"h":2400,"tw":718,"th":900,"c":"#7a7876","v":false,"p":0.0154},{"s":"onuvutigulo-3","t":"Onuvutigulo 3","y":null,"w":1543,"h":2400,"tw":578,"th":900,"c":"#7a7678","v":false,"p":0.0061},{"s":"nissongota-1","t":"Nissongota 1","y":2001,"w":1498,"h":2400,"tw":562,"th":900,"c":"#7a7065","v":false,"p":0.0065},{"s":"nissongotar-songo","t":"Nissongotar Songo","y":2001,"w":2400,"h":1440,"tw":900,"th":540,"c":"#7a7174","v":false,"p":0.0053},{"s":"mayazal-1","t":"Mayazal 1","y":null,"w":1509,"h":2400,"tw":566,"th":900,"c":"#cf778a","v":true,"p":0.0144},{"s":"ochingroho-2","t":"Ochingroho 2","y":2002,"w":1708,"h":2400,"tw":640,"th":900,"c":"#77777a","v":false,"p":0.0013},{"s":"vranti-3","t":"Vranti 3","y":2001,"w":1505,"h":2400,"tw":564,"th":900,"c":"#6d727a","v":false,"p":0.0166},{"s":"vagyo","t":"Vagyo","y":2002,"w":1502,"h":2400,"tw":563,"th":900,"c":"#7a7475","v":false,"p":0.013},{"s":"bikriti-4","t":"Bikriti 4","y":2001,"w":1495,"h":2400,"tw":560,"th":900,"c":"#736f7a","v":false,"p":0.0096},{"s":"akajhoka-5","t":"Akajhoka 5","y":null,"w":1498,"h":2400,"tw":562,"th":900,"c":"#76737a","v":false,"p":0.0042},{"s":"solitude","t":"Solitude","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#7a7a79","v":false,"p":0.0158},{"s":"hahakar-1","t":"Hahakar 1","y":2003,"w":1697,"h":2400,"tw":636,"th":900,"c":"#7a787a","v":false,"p":0.0031},{"s":"hahakar-2","t":"Hahakar 2","y":2003,"w":1694,"h":2400,"tw":635,"th":900,"c":"#7a7779","v":false,"p":0.0041},{"s":"spectral","t":"Spectral","y":null,"w":1824,"h":2400,"tw":684,"th":900,"c":"#7a7a79","v":false,"p":0.0012}],"series":[{"n":"Ochingroho","g":"alien planets","i":[49,17,11,25],"f":[11,25,17,49],"y0":2002,"y1":2008},{"n":"Hahakar","g":null,"i":[55,56,21,7],"f":[7,21,56,55],"y0":2003,"y1":2005},{"n":"Nissongota","g":null,"i":[46,47,27],"f":[27,46,47],"y0":2001,"y1":2005},{"n":"Akazhoka","g":null,"i":[15,3,53],"f":[15,3,53],"y0":2002,"y1":2002},{"n":"Onuvuti","g":null,"i":[43,44,45],"f":[43,44,45],"y0":2004,"y1":2004},{"n":"Ninadbriqkho","g":null,"i":[5,22,14],"f":[5,14,22],"y0":null,"y1":null},{"n":"Bikriti","g":null,"i":[52,30],"f":[30,52],"y0":2001,"y1":2008},{"n":"Sachi","g":null,"i":[29,42],"f":[29,42],"y0":2004,"y1":2004},{"n":"Srot","g":null,"i":[9,1],"f":[9,1],"y0":null,"y1":null},{"n":"Power charger","g":null,"i":[38,8],"f":[8,38],"y0":1999,"y1":1999}]}</script>
+<script>
+/* nafsadh.art viewer: shared by every option. Whole painting, never cropped. */
+const NA=(()=>{
+  const D=JSON.parse(document.getElementById('works').textContent);
+  const W=D.works,P=document.body.dataset.p||'../painting/';
+  const $=id=>document.getElementById(id);
+  const v=$('v'),vi=$('vi'),vt=$('vt'),vy=$('vy'),vn=$('vn'),vx=$('vx'),vp=$('vprev'),vq=$('vnext');
+  const src=(w,thumb)=>P+w.s+(thumb?'.thumb.jpg':'.jpg');
+  let seq=W.map((_,i)=>i),k=-1,back=null,tok=0;
+  function show(j){
+    k=(j+seq.length)%seq.length;const w=W[seq[k]],t=++tok;
+    v.style.setProperty('--vc',w.c);
+    vi.classList.add('swap');
+    v.style.setProperty('--r',(w.w/w.h).toFixed(4));v.style.setProperty('--nw',w.w+'px');
+    vi.src=src(w,true);vi.alt=w.t+(w.y?', '+w.y:'');
+    const hi=new Image();hi.onload=()=>{if(t===tok){vi.src=hi.src;}};hi.src=src(w);
+    requestAnimationFrame(()=>vi.classList.remove('swap'));
+    vt.textContent=w.t;vy.textContent=w.y||'';vy.hidden=!w.y;
+    if(vn)vn.textContent=seq.length>1?(k+1)+' of '+seq.length:'';
+    vp.hidden=vq.hidden=seq.length<2;
+    try{history.replaceState(null,'','#'+w.s);}catch(e){}
+    [k+1,k-1].forEach(n=>{const x=W[seq[(n+seq.length)%seq.length]];(new Image()).src=src(x);});
+    document.dispatchEvent(new CustomEvent('na:show',{detail:{i:seq[k],w}}));
+  }
+  function open(i,el,within){
+    seq=within&&within.length?within.slice():W.map((_,n)=>n);
+    back=el||document.activeElement;
+    const j=seq.indexOf(i);
+    v.hidden=false;document.documentElement.classList.add('v-open');
+    show(j<0?0:j);
+    requestAnimationFrame(()=>v.classList.add('on'));
+    vx.focus({preventScroll:true});
+  }
+  function close(){
+    if(v.hidden)return;
+    v.classList.remove('on');v.hidden=true;document.documentElement.classList.remove('v-open');
+    tok++;vi.removeAttribute('src');k=-1;
+    try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}
+    if(back&&back.focus)back.focus({preventScroll:true});
+    document.dispatchEvent(new CustomEvent('na:close'));
+  }
+  vp.addEventListener('click',e=>{e.stopPropagation();show(k-1);});
+  vq.addEventListener('click',e=>{e.stopPropagation();show(k+1);});
+  vx.addEventListener('click',e=>{e.stopPropagation();close();});
+  v.addEventListener('click',e=>{if(!e.target.closest('button'))close();});
+  addEventListener('keydown',e=>{
+    if(v.hidden)return;
+    if(e.key==='Escape'){e.preventDefault();close();}
+    else if(e.key==='ArrowLeft'){e.preventDefault();show(k-1);}
+    else if(e.key==='ArrowRight'){e.preventDefault();show(k+1);}
+    else if(e.key==='Tab'){const f=[...v.querySelectorAll('button:not([hidden])')];if(!f.length)return;
+      const a=f.indexOf(document.activeElement);e.preventDefault();f[(a+(e.shiftKey?-1:1)+f.length)%f.length].focus();}
+  });
+  // touch: swipe sideways to move, down to close
+  let x0=null,y0=0;
+  v.addEventListener('touchstart',e=>{if(e.touches.length!==1){x0=null;return;}x0=e.touches[0].clientX;y0=e.touches[0].clientY;},{passive:true});
+  v.addEventListener('touchend',e=>{if(x0===null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;
+    if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.2){show(k+(dx<0?1:-1));e.preventDefault();}
+    else if(dy>90&&Math.abs(dy)>Math.abs(dx)*1.5){close();e.preventDefault();}},{passive:false});
+  // deep link: nafsadh.art/#hahakar-4 (later /painting/hahakar-4/)
+  function fromHash(){const s=decodeURIComponent(location.hash.slice(1));const i=W.findIndex(w=>w.s===s);if(i>=0)open(i,null);}
+  addEventListener('load',fromHash);
+  const thumb=(w,cls)=>{const im=document.createElement('img');im.src=src(w,true);im.alt=w.t+(w.y?', '+w.y:'');
+    im.width=w.tw;im.height=w.th;im.loading='lazy';im.decoding='async';if(cls)im.className=cls;return im;};
+  const label=w=>w.t+(w.y?', '+w.y:'');
+  return {D,W,open,close,src,thumb,label};
+})();
+
+(function(){
+const {W,D}=NA,root=document.documentElement,$=id=>document.getElementById(id);
+try{const t=localStorage.getItem('nafsadh-art-theme');if(t)root.dataset.theme=t;}catch(e){}
+$('theme').onclick=()=>{const t=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('nafsadh-art-theme',t);}catch(e){}};
+addEventListener('pointermove',e=>{root.style.setProperty('--throw-x',e.clientX+'px');root.style.setProperty('--throw-y',e.clientY+'px');},{passive:true});
+
+const ys=W.filter(w=>w.y).map(w=>w.y);
+$('n').textContent=W.length;$('count').textContent=W.length+' works';
+$('meta').textContent='by hand, on paper. '+W.length+' works, '+Math.min(...ys)+' to '+Math.max(...ys)+'.';
+
+const frames=W.map((w,i)=>{const b=document.createElement('button');b.type='button';b.className='frame';
+  b.setAttribute('aria-label',NA.label(w));b.append(NA.thumb(w));
+  const c=document.createElement('span');c.className='cap';c.innerHTML='<b></b>'+(w.y?'<i></i>':'');c.querySelector('b').textContent=w.t;if(w.y)c.querySelector('i').textContent=w.y;b.append(c);
+  b.addEventListener('click',()=>NA.open(i,b,order()));return {b,w,i,ar:w.w/w.h};});
+
+let mode='sel';
+function order(){return groups().flatMap(g=>g.items.map(f=>f.i));}
+function groups(){
+  if(mode==='sel')return [{label:null,items:frames}];
+  const by={};frames.forEach(f=>{const k=f.w.y||'undated';(by[k]=by[k]||[]).push(f);});
+  return Object.keys(by).sort((a,b)=>(a==='undated')-(b==='undated')||a-b).map(k=>({label:k,items:by[k]}));
+}
+function layout(){
+  const H=innerWidth>=1100?240:innerWidth>=760?190:122,gap=innerWidth<600?10:16;
+  root.style.setProperty('--colgap',gap+'px');root.style.setProperty('--rowgap',(innerWidth<600?12:20)+'px');
+  const room=$('room');room.textContent='';const Wd=room.clientWidth-(innerWidth<600?28:44);
+  groups().forEach(g=>{
+    if(g.label){const s=document.createElement('div');s.className='sub';s.innerHTML='<b></b><span></span>';s.querySelector('b').textContent=g.label;s.querySelector('span').textContent=g.items.length+(g.items.length>1?' works':' work');room.append(s);}
+    const wall=document.createElement('div');wall.className='wall';room.append(wall);
+    let row=[],sum=0;
+    const flush=last=>{if(!row.length)return;const r=document.createElement('div');r.className='grow';
+      let h=(Wd-gap*(row.length-1))/sum;if(last&&h>H*1.15)h=H;h=Math.min(h,H*1.9);
+      row.forEach(f=>{f.b.style.width=Math.floor(f.ar*h)+'px';r.append(f.b);});wall.append(r);row=[];sum=0;};
+    g.items.forEach(f=>{row.push(f);sum+=f.ar;if(sum*H+gap*(row.length-1)>=Wd)flush(false);});flush(true);
+  });
+}
+function setMode(m){mode=m;$('o-sel').classList.toggle('on',m==='sel');$('o-year').classList.toggle('on',m==='year');
+  $('o-sel').setAttribute('aria-pressed',m==='sel');$('o-year').setAttribute('aria-pressed',m==='year');layout();}
+$('o-sel').onclick=()=>setMode('sel');$('o-year').onclick=()=>setMode('year');
+let lw=innerWidth,rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(innerWidth!==lw){lw=innerWidth;layout();}},120);});
+layout();
+})();
+</script>
+</body>
+</html>

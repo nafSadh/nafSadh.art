@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>nafsadh • art</title>
+<meta name="description" content="Paintings and drawings by nafSadh, by hand, on paper.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=EB+Garamond:ital@1&family=IM+Fell+English:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f4f3ee;--paper-hi:#fafaf5;--paper-cool:#eeefe9;--ink:#1a1208;--ink-soft:#3d2a16;--dim:#8a7a56;
+  --azure:#2a6bb8;--azure-deep:#1a3e68;--azure-soft:#7aa8d8;--line:rgba(26,18,8,.14)}
+*{box-sizing:border-box;margin:0;padding:0}[hidden]{display:none!important}
+html{background:var(--paper)}html.v-open{overflow:hidden}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh;position:relative;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.04;z-index:0;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0.8 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background:linear-gradient(180deg,rgba(250,245,230,.55) 0%,rgba(244,243,238,0) 40%,rgba(238,239,233,.35) 100%)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:1px dashed var(--azure);outline-offset:4px}
+.fr{font-family:'Fraunces',serif;font-style:italic;font-variation-settings:"opsz" 144,"SOFT" 50}
+
+.bar{position:relative;z-index:1;padding:20px 36px;display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+.bar .mark{color:var(--ink);font-family:'Fraunces',serif;font-style:italic;font-size:22px;display:flex;align-items:center;gap:9px;font-variation-settings:"opsz" 144}
+.bar .mark svg{width:15px;height:15px;color:var(--azure)}
+.bar nav{display:flex;gap:18px;font-family:'Fraunces',serif;font-style:italic;font-size:14px;color:var(--dim)}
+.bar nav a:hover{color:var(--azure)}
+
+.hero{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;padding:4vh 24px 5vh;gap:20px}
+.easel{position:relative;width:clamp(170px,24vh,250px);aspect-ratio:1;margin-bottom:6px}
+.easel::before{content:'';position:absolute;width:150%;height:150%;left:50%;top:46%;transform:translate(-50%,-50%);background:radial-gradient(circle at 48% 46%,rgba(255,220,150,.5) 0%,rgba(255,210,140,.22) 30%,rgba(250,200,130,0) 62%);filter:blur(2px);mix-blend-mode:multiply}
+.easel svg{position:relative;width:100%;height:100%;color:var(--azure)}
+.easel .ray{animation:flare 6s ease-in-out infinite}
+.easel .ray:nth-of-type(2n){animation-delay:-2s}.easel .ray:nth-of-type(3n){animation-delay:-4s}
+@keyframes flare{0%,100%{opacity:.35}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.easel .ray{animation:none}}
+.h-mark{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:clamp(34px,4.6vw,58px);letter-spacing:-.025em;line-height:1;display:inline-flex;align-items:baseline;gap:.12em;font-variation-settings:"opsz" 144,"SOFT" 50}
+.h-mark .az{color:var(--azure)}
+.h-mark svg{width:.42em;height:.42em;color:var(--azure);margin:0 .06em}
+.h-desc{font-size:12px;letter-spacing:6px;text-transform:uppercase;color:var(--azure);margin-top:2px}
+.h-desc .amp{font-family:'IM Fell English',serif;font-style:italic;text-transform:none;font-size:1.55em;letter-spacing:0;vertical-align:-.06em;margin:0 .14em}
+
+.horizon{position:relative;z-index:1;max-width:1020px;margin:0 auto;padding:20px 36px;border-top:1px dashed color-mix(in srgb,var(--azure),transparent 82%);border-bottom:1px dotted color-mix(in srgb,var(--azure),transparent 82%);display:flex;align-items:center;justify-content:center;gap:22px}
+.horizon p{font-family:'EB Garamond',serif;font-style:italic;color:color-mix(in srgb,var(--ink),transparent 55%);font-size:clamp(15px,1.5vw,20px);letter-spacing:clamp(.25em,.7vw,.5em);line-height:1;text-align:center}
+.horizon i{width:26px;height:1px;background:color-mix(in srgb,var(--ink),transparent 70%)}
+
+.sec-label{position:relative;z-index:1;max-width:1180px;margin:56px auto 8px;padding:0 36px;display:flex;align-items:baseline;justify-content:space-between;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--dim);font-weight:600}
+.sec-label em{font-family:'Fraunces',serif;font-style:italic;text-transform:none;letter-spacing:0;color:var(--azure);font-size:14px;font-weight:400}
+
+.series{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:4vh 36px 2vh;display:flex;flex-wrap:wrap;justify-content:center;gap:7vh 40px}
+.series .card{flex:0 0 clamp(200px,22%,250px)}
+.card{appearance:none;background:none;border:0;cursor:pointer;color:var(--ink);display:flex;flex-direction:column;align-items:center;text-align:center;font:inherit}
+.fan{position:relative;height:150px;width:100%;margin-bottom:26px}
+.fan img{position:absolute;left:50%;bottom:0;height:auto;max-height:140px;max-width:118px;width:auto;background:var(--paper-hi);padding:4px;box-shadow:0 6px 16px -6px rgba(26,18,8,.28),0 1px 2px rgba(26,18,8,.12);transform-origin:50% 100%;transition:transform .35s ease}
+.fan img:nth-child(1){transform:translateX(-50%) rotate(-9deg) translateX(-26px)}
+.fan img:nth-child(2){transform:translateX(-50%) rotate(8deg) translateX(26px)}
+.fan img:last-child{transform:translateX(-50%);z-index:2}
+.card:hover .fan img:nth-child(1){transform:translateX(-50%) rotate(-13deg) translateX(-38px)}
+.card:hover .fan img:nth-child(2){transform:translateX(-50%) rotate(12deg) translateX(38px)}
+.card:hover h2{color:var(--azure-deep)}
+.card .no{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.card .no::before,.card .no::after{content:'';width:20px;height:1px;background:currentColor;opacity:.4}
+.card h2{font-family:'Fraunces',serif;font-weight:400;font-style:italic;font-size:clamp(26px,3vw,34px);letter-spacing:-.4px;line-height:1.1;transition:color .25s;font-variation-settings:"opsz" 144,"SOFT" 50}
+.card h2 em{display:block;font-size:.5em;color:var(--dim);margin-top:10px;letter-spacing:0}
+.card .meta{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);font-weight:500;margin-top:16px;display:flex;gap:10px;align-items:baseline;justify-content:center}
+.card .meta b{font-family:'Fraunces',serif;font-style:italic;font-size:15px;color:var(--azure);letter-spacing:0;text-transform:none;font-weight:500}
+
+.divider{position:relative;z-index:1;max-width:1020px;margin:7vh auto 0;padding:0 36px;display:flex;align-items:center;gap:16px;color:var(--azure);opacity:.55}
+.divider .l{flex:1;height:1px;background:currentColor;opacity:.35}
+.divider svg{width:60px;height:20px}
+
+.grid{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:3vh 36px 4vh;display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:44px 30px}
+.work{appearance:none;background:none;border:0;cursor:pointer;font:inherit;color:var(--ink);display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.work .mat{width:100%;aspect-ratio:4/5;background:var(--paper-hi);display:flex;align-items:center;justify-content:center;padding:9%;
+  box-shadow:0 1px 0 var(--line),0 10px 26px -18px rgba(26,18,8,.35);transition:box-shadow .3s,transform .3s}
+.work .mat img{max-width:100%;max-height:100%;width:auto;height:auto;display:block;box-shadow:0 1px 3px rgba(26,18,8,.16)}
+.work:hover .mat{transform:translateY(-3px);box-shadow:0 1px 0 var(--line),0 18px 34px -18px rgba(26,18,8,.45)}
+.work:hover .t{color:var(--azure-deep)}
+.work .t{font-family:'Fraunces',serif;font-style:italic;font-size:17px;line-height:1.2;font-variation-settings:"opsz" 72;transition:color .25s}
+.work .y{display:block;font-family:'Inter',sans-serif;font-style:normal;font-size:10px;letter-spacing:2.5px;color:var(--dim);margin-top:5px}
+
+.close{position:relative;z-index:1;text-align:center;padding:8vh 24px 4vh;color:var(--dim)}
+.close .paren{font-family:'Fraunces',serif;font-style:italic;font-size:44px;color:var(--azure);opacity:.5;line-height:1;transform:rotate(90deg);display:inline-block}
+.close p{font-family:'EB Garamond',serif;font-style:italic;font-size:19px;margin-top:10px;color:var(--ink-soft)}
+.foot{position:relative;z-index:1;text-align:center;padding:5vh 24px 9vh;margin-top:6vh;border-top:1px dotted color-mix(in srgb,var(--azure),transparent 75%);max-width:760px;margin:0 auto}
+.foot .tag{font-family:'Fraunces',serif;font-style:italic;color:var(--azure);font-size:20px}
+.foot .imp{font-family:'Fraunces',serif;font-style:italic;color:var(--ink-soft);margin-top:8px;font-size:15px}
+.foot .meta{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);margin-top:16px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.foot .meta a:hover{color:var(--azure)}
+@media(max-width:640px){.bar{padding:16px 18px}.bar nav{gap:12px;font-size:13px}.series,.grid,.sec-label{padding-left:18px;padding-right:18px}
+  .series{gap:5vh 14px}.series .card{flex:0 0 calc(50% - 7px)}.fan{height:112px}.fan img{max-height:104px;max-width:84px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:30px 14px}.work .t{font-size:15px}.sec-label{letter-spacing:3px}}
+
+/* viewer: a sheet on the desk */
+.v{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .25s ease;background:var(--paper);
+  --vw-max:calc(100vw - 170px);--vh-max:calc(100svh - 170px)}
+.v::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(60vmax circle at 50% 42%,rgba(255,220,150,.22),transparent 60%)}
+.v.on{opacity:1}
+.v-fig{position:relative;display:flex;flex-direction:column;align-items:center;gap:18px;cursor:zoom-out}
+.v-fig img{display:block;width:min(var(--vw-max),calc(var(--vh-max) * var(--r)),calc(var(--nw) * 1.4));height:auto;aspect-ratio:var(--r);transition:opacity .2s;
+  box-shadow:0 2px 4px rgba(26,18,8,.12),0 26px 60px -24px rgba(26,18,8,.45)}
+.v-fig img.swap{opacity:.85}
+.v-cap{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:0 16px}
+.v-t{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(19px,2.2vw,24px);line-height:1.15;font-variation-settings:"opsz" 144,"SOFT" 50}
+.v-y{font-size:10px;letter-spacing:3px;color:var(--dim)}
+.v-n{font-family:'Fraunces',serif;font-style:italic;font-size:14px;color:var(--azure)}
+.v-x{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));right:20px;font:inherit;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);background:none;border:0;cursor:pointer;padding:6px;z-index:3;font-weight:500}
+.v-x:hover{color:var(--azure)}
+.v-x svg{display:none}
+.v-nav{position:fixed;top:0;bottom:0;width:84px;border:0;background:none;cursor:pointer;color:var(--azure);display:flex;align-items:center;justify-content:center;z-index:2;opacity:.6}
+.v-nav:hover{opacity:1}.v-nav svg{width:26px;height:26px}
+.v-prev{left:0}.v-next{right:0}
+@media(max-width:680px){.v{--vw-max:calc(100vw - 28px);--vh-max:calc(100svh - 160px)}.v-nav{width:18%}.v-nav svg{display:none}}
+</style>
+</head>
+<body data-p="../painting/">
+<svg style="display:none"><symbol id="dot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity=".18"/><circle cx="12" cy="12" r="4" fill="currentColor"/></symbol></svg>
+<header class="bar">
+  <a class="mark" href="./"><svg aria-hidden="true"><use href="#dot"/></svg>nafsadh</a>
+  <nav aria-label="Elsewhere"><a href="../digital/">digital</a><a href="https://sadh.studio">sadh.studio</a><a href="https://sadh.ink">sadh.ink</a></nav>
+</header>
+<section class="hero">
+  <div class="easel" aria-hidden="true">
+    <svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M150 34 L84 282 M150 34 L216 282" />
+      <path d="M150 40 L150 270" stroke-width="1.4" opacity=".45"/>
+      <circle cx="150" cy="30" r="4" fill="currentColor"/>
+      <path d="M96 246 L204 246" stroke-width="1.8"/>
+      <rect x="82" y="64" width="136" height="112" fill="#fafaf5"/>
+      <path d="M70 182 L230 182" stroke-width="3.2"/>
+      <circle cx="150" cy="114" r="20" fill="currentColor" fill-opacity=".18"/>
+      <circle cx="150" cy="114" r="20"/>
+      <g stroke-width="1.8"><path class="ray" d="M150 82v-8"/><path class="ray" d="M150 146v8"/><path class="ray" d="M118 114h-8"/><path class="ray" d="M182 114h8"/><path class="ray" d="M127 91l-5-5"/><path class="ray" d="M173 137l5 5"/><path class="ray" d="M173 91l5-5"/><path class="ray" d="M127 137l-5 5"/></g>
+      <path d="M90 162 Q112 152 132 160 Q154 168 176 158 Q196 150 210 158" stroke-width="1.5" opacity=".7"/>
+      <path d="M232 168 L256 262" stroke-width="2"/>
+      <path d="M228 152 Q226 162 232 168 Q238 162 236 150 Q232 144 228 152Z" fill="currentColor" fill-opacity=".35" stroke-width="1.6"/>
+    </svg>
+  </div>
+  <h1 class="h-mark"><span>nafsadh</span><svg aria-hidden="true"><use href="#dot"/></svg><span class="az">art</span></h1>
+  <p class="h-desc">paintings <span class="amp">&amp;</span> drawings, by hand</p>
+</section>
+
+<div class="sec-label">Series <em id="s-n"></em></div>
+<main>
+<section class="series" id="series" aria-label="Series"></section>
+<div class="divider" aria-hidden="true"><span class="l"></span><svg viewBox="0 0 60 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4 12 Q16 4 30 10 Q44 16 56 8"/><circle cx="30" cy="10" r="2" fill="currentColor"/></svg><span class="l"></span></div>
+<div class="sec-label">All works <em id="w-n"></em></div>
+<section class="grid" id="grid" aria-label="All works"></section>
+</main>
+<footer class="foot">
+  <p class="meta"><a href="https://nafsadh.com">nafsadh.com</a><a href="../digital/">digital paintings</a><a href="https://sadh.studio">sadh.studio</a><a href="https://sadh.ink">sadh.ink</a></p>
+</footer>
+
+<div class="v" id="v" role="dialog" aria-modal="true" aria-labelledby="vt" hidden>
+  <button class="v-x" id="vx" type="button" aria-label="Close">close<svg viewBox="0 0 24 24"></svg></button>
+  <button class="v-nav v-prev" id="vprev" type="button" aria-label="Previous painting"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M15 4l-8 8 8 8"/></svg></button>
+  <button class="v-nav v-next" id="vnext" type="button" aria-label="Next painting"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M9 4l8 8-8 8"/></svg></button>
+  <figure class="v-fig"><img id="vi" alt=""><figcaption class="v-cap"><span class="v-t" id="vt"></span><span class="v-y" id="vy"></span><span class="v-n" id="vn"></span></figcaption></figure>
+</div>
+<script id="works" type="application/json">{"works":[{"s":"night-sky","t":"Night sky","y":null,"w":716,"h":900,"tw":716,"th":900,"c":"#426a9c","v":true,"p":0.948,"lo":1},{"s":"srot-11","t":"Srot 11","y":null,"w":1700,"h":2400,"tw":638,"th":900,"c":"#dc9a6c","v":true,"p":0.1676},{"s":"nagorik-lamppost","t":"Nagorik Lamppost","y":2012,"w":2200,"h":2000,"tw":900,"th":818,"c":"#3d63b1","v":true,"p":0.0337},{"s":"akazhoka-03","t":"Akazhoka 3","y":2002,"w":1509,"h":2400,"tw":566,"th":900,"c":"#e3d46c","v":true,"p":0.367},{"s":"dukkhobodh-01","t":"Dukkhobodh 1","y":null,"w":1696,"h":2400,"tw":636,"th":900,"c":"#4a3d44","v":false,"p":0.1967},{"s":"ninadbriqkho-03","t":"Ninadbriqkho 3","y":null,"w":1711,"h":2400,"tw":642,"th":900,"c":"#bc7a6d","v":true,"p":0.2171},{"s":"purple-flower","t":"Purple flower","y":null,"w":715,"h":900,"tw":715,"th":900,"c":"#40bedb","v":true,"p":0.8358,"lo":1},{"s":"hahakar-4","t":"Hahakar 4","y":2005,"w":1692,"h":2400,"tw":634,"th":900,"c":"#273f92","v":true,"p":0.2676},{"s":"design-2-power-charger-2","t":"Design 2 (power charger 2)","y":1999,"w":1673,"h":2400,"tw":627,"th":900,"c":"#e07165","v":true,"p":0.0493},{"s":"srot-10","t":"Srot 10","y":null,"w":1718,"h":2400,"tw":644,"th":900,"c":"#ebdd50","v":true,"p":0.9999},{"s":"stones","t":"Stones","y":null,"w":896,"h":1346,"tw":599,"th":900,"c":"#8672ab","v":true,"p":0.0229,"lo":1},{"s":"ochingroho-3","t":"Ochingroho 3","y":2008,"w":2400,"h":1700,"tw":900,"th":638,"c":"#76acc3","v":true,"p":0.1093},{"s":"rongkhela-01","t":"RongKhela 1","y":null,"w":2400,"h":1765,"tw":900,"th":662,"c":"#438cba","v":true,"p":0.439},{"s":"self-portrait","t":"Self-portrait","y":null,"w":540,"h":720,"tw":540,"th":720,"c":"#ebb54f","v":true,"p":0.1178,"lo":1},{"s":"ninadbriqkho-56","t":"Ninadbriqkho 56","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#416ad8","v":true,"p":0.0952},{"s":"akazhoka-02","t":"Akazhoka 2","y":2002,"w":2400,"h":1499,"tw":900,"th":562,"c":"#dc7f6d","v":true,"p":0.4357},{"s":"mukut","t":"Mukut","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#ebd621","v":true,"p":0.1315},{"s":"ochingroho-01","t":"Ochingroho 1","y":2004,"w":1739,"h":2400,"tw":652,"th":900,"c":"#74747a","v":false,"p":0.008},{"s":"oil-pastel-abstract","t":"Oil pastel abstract","y":null,"w":675,"h":900,"tw":675,"th":900,"c":"#ebd707","v":true,"p":0.8857,"lo":1},{"s":"bornilgolok-colorful-planet","t":"BornilGolok (Colorful Planet)","y":2004,"w":2400,"h":1704,"tw":900,"th":639,"c":"#75a3ca","v":true,"p":0.1059},{"s":"limbo-dance-01","t":"Limbo dance 1","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#ebd50d","v":true,"p":0.0997},{"s":"hahakar-3","t":"Hahakar 3","y":2005,"w":2400,"h":1665,"tw":900,"th":624,"c":"#47383d","v":false,"p":0.114},{"s":"ninadbriqkho-04","t":"Ninadbriqkho 4","y":null,"w":2400,"h":1677,"tw":900,"th":629,"c":"#57a693","v":true,"p":0.0192},{"s":"rays-1","t":"Rays 1","y":2000,"w":2400,"h":1539,"tw":900,"th":577,"c":"#cc1815","v":true,"p":0.0556},{"s":"trio-01","t":"Trio 1","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#ea3c29","v":true,"p":0.0542},{"s":"ochingroho-04","t":"Ochingroho 4","y":null,"w":1706,"h":2400,"tw":640,"th":900,"c":"#6daad1","v":true,"p":0.0547},{"s":"boctobyo","t":"Boctobyo","y":null,"w":2400,"h":1725,"tw":900,"th":647,"c":"#cc7495","v":true,"p":0.0888},{"s":"nissongota","t":"Nissongota","y":2005,"w":1752,"h":2400,"tw":657,"th":900,"c":"#ce7687","v":true,"p":0.0486},{"s":"love-it-or-leave-it-1","t":"Love it or leave it 1","y":null,"w":1108,"h":514,"tw":900,"th":418,"c":"#cd0000","v":true,"p":0.3377},{"s":"sachi-5-gamejoy-of-a-boy","t":"Sachi 5: Gamejoy of a boy","y":2004,"w":1720,"h":2400,"tw":645,"th":900,"c":"#74757a","v":false,"p":0.0317},{"s":"bikriti-06","t":"Bikriti 6","y":2008,"w":2400,"h":1696,"tw":900,"th":636,"c":"#ce8679","v":true,"p":0.0053},{"s":"skeptic-dream-01","t":"Skeptic dream 1","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#d3d837","v":true,"p":0.0384},{"s":"couplet-1","t":"Couplet 1","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#e15c77","v":true,"p":0.0327},{"s":"ovibyakti-2","t":"Ovibyakti 2","y":2009,"w":2400,"h":1659,"tw":900,"th":622,"c":"#79c9c2","v":true,"p":0.0396},{"s":"symmetric-asymmetry","t":"Symmetric Asymmetry","y":2007,"w":2400,"h":1817,"tw":900,"th":682,"c":"#79787a","v":false,"p":0.0},{"s":"swopno-5-sukhoswopno","t":"Swopno 5 (sukhoswopno)","y":2001,"w":1492,"h":2400,"tw":559,"th":900,"c":"#7a7368","v":false,"p":0.0257},{"s":"shiver","t":"Shiver","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#7a7461","v":false,"p":0.0016},{"s":"sheit-01","t":"Sheit 1","y":null,"w":1556,"h":2400,"tw":583,"th":900,"c":"#b18c47","v":true,"p":0.0383},{"s":"design-1-power-charger-1","t":"Design 1 (power charger 1)","y":1999,"w":1717,"h":2400,"tw":644,"th":900,"c":"#e8d1a1","v":true,"p":0.034},{"s":"amader-bedona-hasimukher-arale-1","t":"Amader Bedona Hasimukher Arale 1","y":null,"w":1521,"h":2400,"tw":570,"th":900,"c":"#6d77b4","v":true,"p":0.0252},{"s":"ba-dha-2","t":"Ba~dha 2","y":null,"w":2400,"h":1522,"tw":900,"th":571,"c":"#becf75","v":true,"p":0.0602},{"s":"ghum-1","t":"Ghum 1","y":null,"w":2400,"h":1523,"tw":900,"th":571,"c":"#cd9c55","v":true,"p":0.0336},{"s":"sachi-6-aboddho-bokar-anondo","t":"Sachi 6: Aboddho Bokar Anondo","y":2004,"w":2400,"h":1700,"tw":900,"th":638,"c":"#6c687a","v":false,"p":0.0061},{"s":"onuvuti-1","t":"Onuvuti 1","y":2004,"w":2400,"h":1700,"tw":900,"th":638,"c":"#74717a","v":false,"p":0.0223},{"s":"onuvuuti-02","t":"Onuvuuti 2","y":null,"w":1916,"h":2400,"tw":718,"th":900,"c":"#7a7876","v":false,"p":0.0154},{"s":"onuvutigulo-3","t":"Onuvutigulo 3","y":null,"w":1543,"h":2400,"tw":578,"th":900,"c":"#7a7678","v":false,"p":0.0061},{"s":"nissongota-1","t":"Nissongota 1","y":2001,"w":1498,"h":2400,"tw":562,"th":900,"c":"#7a7065","v":false,"p":0.0065},{"s":"nissongotar-songo","t":"Nissongotar Songo","y":2001,"w":2400,"h":1440,"tw":900,"th":540,"c":"#7a7174","v":false,"p":0.0053},{"s":"mayazal-1","t":"Mayazal 1","y":null,"w":1509,"h":2400,"tw":566,"th":900,"c":"#cf778a","v":true,"p":0.0144},{"s":"ochingroho-2","t":"Ochingroho 2","y":2002,"w":1708,"h":2400,"tw":640,"th":900,"c":"#77777a","v":false,"p":0.0013},{"s":"vranti-3","t":"Vranti 3","y":2001,"w":1505,"h":2400,"tw":564,"th":900,"c":"#6d727a","v":false,"p":0.0166},{"s":"vagyo","t":"Vagyo","y":2002,"w":1502,"h":2400,"tw":563,"th":900,"c":"#7a7475","v":false,"p":0.013},{"s":"bikriti-4","t":"Bikriti 4","y":2001,"w":1495,"h":2400,"tw":560,"th":900,"c":"#736f7a","v":false,"p":0.0096},{"s":"akajhoka-5","t":"Akajhoka 5","y":null,"w":1498,"h":2400,"tw":562,"th":900,"c":"#76737a","v":false,"p":0.0042},{"s":"solitude","t":"Solitude","y":null,"w":784,"h":1128,"tw":626,"th":900,"c":"#7a7a79","v":false,"p":0.0158},{"s":"hahakar-1","t":"Hahakar 1","y":2003,"w":1697,"h":2400,"tw":636,"th":900,"c":"#7a787a","v":false,"p":0.0031},{"s":"hahakar-2","t":"Hahakar 2","y":2003,"w":1694,"h":2400,"tw":635,"th":900,"c":"#7a7779","v":false,"p":0.0041},{"s":"spectral","t":"Spectral","y":null,"w":1824,"h":2400,"tw":684,"th":900,"c":"#7a7a79","v":false,"p":0.0012}],"series":[{"n":"Ochingroho","g":"alien planets","i":[49,17,11,25],"f":[11,25,17,49],"y0":2002,"y1":2008},{"n":"Hahakar","g":null,"i":[55,56,21,7],"f":[7,21,56,55],"y0":2003,"y1":2005},{"n":"Nissongota","g":null,"i":[46,47,27],"f":[27,46,47],"y0":2001,"y1":2005},{"n":"Akazhoka","g":null,"i":[15,3,53],"f":[15,3,53],"y0":2002,"y1":2002},{"n":"Onuvuti","g":null,"i":[43,44,45],"f":[43,44,45],"y0":2004,"y1":2004},{"n":"Ninadbriqkho","g":null,"i":[5,22,14],"f":[5,14,22],"y0":null,"y1":null},{"n":"Bikriti","g":null,"i":[52,30],"f":[30,52],"y0":2001,"y1":2008},{"n":"Sachi","g":null,"i":[29,42],"f":[29,42],"y0":2004,"y1":2004},{"n":"Srot","g":null,"i":[9,1],"f":[9,1],"y0":null,"y1":null},{"n":"Power charger","g":null,"i":[38,8],"f":[8,38],"y0":1999,"y1":1999}]}</script>
+<script>
+/* nafsadh.art viewer: shared by every option. Whole painting, never cropped. */
+const NA=(()=>{
+  const D=JSON.parse(document.getElementById('works').textContent);
+  const W=D.works,P=document.body.dataset.p||'../painting/';
+  const $=id=>document.getElementById(id);
+  const v=$('v'),vi=$('vi'),vt=$('vt'),vy=$('vy'),vn=$('vn'),vx=$('vx'),vp=$('vprev'),vq=$('vnext');
+  const src=(w,thumb)=>P+w.s+(thumb?'.thumb.jpg':'.jpg');
+  let seq=W.map((_,i)=>i),k=-1,back=null,tok=0;
+  function show(j){
+    k=(j+seq.length)%seq.length;const w=W[seq[k]],t=++tok;
+    v.style.setProperty('--vc',w.c);
+    vi.classList.add('swap');
+    v.style.setProperty('--r',(w.w/w.h).toFixed(4));v.style.setProperty('--nw',w.w+'px');
+    vi.src=src(w,true);vi.alt=w.t+(w.y?', '+w.y:'');
+    const hi=new Image();hi.onload=()=>{if(t===tok){vi.src=hi.src;}};hi.src=src(w);
+    requestAnimationFrame(()=>vi.classList.remove('swap'));
+    vt.textContent=w.t;vy.textContent=w.y||'';vy.hidden=!w.y;
+    if(vn)vn.textContent=seq.length>1?(k+1)+' of '+seq.length:'';
+    vp.hidden=vq.hidden=seq.length<2;
+    try{history.replaceState(null,'','#'+w.s);}catch(e){}
+    [k+1,k-1].forEach(n=>{const x=W[seq[(n+seq.length)%seq.length]];(new Image()).src=src(x);});
+    document.dispatchEvent(new CustomEvent('na:show',{detail:{i:seq[k],w}}));
+  }
+  function open(i,el,within){
+    seq=within&&within.length?within.slice():W.map((_,n)=>n);
+    back=el||document.activeElement;
+    const j=seq.indexOf(i);
+    v.hidden=false;document.documentElement.classList.add('v-open');
+    show(j<0?0:j);
+    requestAnimationFrame(()=>v.classList.add('on'));
+    vx.focus({preventScroll:true});
+  }
+  function close(){
+    if(v.hidden)return;
+    v.classList.remove('on');v.hidden=true;document.documentElement.classList.remove('v-open');
+    tok++;vi.removeAttribute('src');k=-1;
+    try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}
+    if(back&&back.focus)back.focus({preventScroll:true});
+    document.dispatchEvent(new CustomEvent('na:close'));
+  }
+  vp.addEventListener('click',e=>{e.stopPropagation();show(k-1);});
+  vq.addEventListener('click',e=>{e.stopPropagation();show(k+1);});
+  vx.addEventListener('click',e=>{e.stopPropagation();close();});
+  v.addEventListener('click',e=>{if(!e.target.closest('button'))close();});
+  addEventListener('keydown',e=>{
+    if(v.hidden)return;
+    if(e.key==='Escape'){e.preventDefault();close();}
+    else if(e.key==='ArrowLeft'){e.preventDefault();show(k-1);}
+    else if(e.key==='ArrowRight'){e.preventDefault();show(k+1);}
+    else if(e.key==='Tab'){const f=[...v.querySelectorAll('button:not([hidden])')];if(!f.length)return;
+      const a=f.indexOf(document.activeElement);e.preventDefault();f[(a+(e.shiftKey?-1:1)+f.length)%f.length].focus();}
+  });
+  // touch: swipe sideways to move, down to close
+  let x0=null,y0=0;
+  v.addEventListener('touchstart',e=>{if(e.touches.length!==1){x0=null;return;}x0=e.touches[0].clientX;y0=e.touches[0].clientY;},{passive:true});
+  v.addEventListener('touchend',e=>{if(x0===null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;
+    if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.2){show(k+(dx<0?1:-1));e.preventDefault();}
+    else if(dy>90&&Math.abs(dy)>Math.abs(dx)*1.5){close();e.preventDefault();}},{passive:false});
+  // deep link: nafsadh.art/#hahakar-4 (later /painting/hahakar-4/)
+  function fromHash(){const s=decodeURIComponent(location.hash.slice(1));const i=W.findIndex(w=>w.s===s);if(i>=0)open(i,null);}
+  addEventListener('load',fromHash);
+  const thumb=(w,cls)=>{const im=document.createElement('img');im.src=src(w,true);im.alt=w.t+(w.y?', '+w.y:'');
+    im.width=w.tw;im.height=w.th;im.loading='lazy';im.decoding='async';if(cls)im.className=cls;return im;};
+  const label=w=>w.t+(w.y?', '+w.y:'');
+  return {D,W,open,close,src,thumb,label};
+})();
+
+(function(){
+const {W,D}=NA,$=id=>document.getElementById(id);
+const mk=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;};
+let inS=0;
+D.series.forEach(s=>{inS+=s.i.length;
+  const b=mk('button','card');b.type='button';b.setAttribute('aria-label',s.n+', '+s.i.length+' works');
+  const fan=mk('div','fan');
+  const f=s.f,pick=f.length>=3?[f[1],f[2],f[0]]:f.length===2?[f[1],f[0]]:f;
+  pick.forEach(i=>{const im=NA.thumb(W[i]);im.alt='';fan.append(im);});
+  const yr=s.y0?(s.y0===s.y1?String(s.y0):s.y0+' to '+s.y1):'undated';
+  const h=mk('h2','',s.n);if(s.g)h.append(mk('em','',s.g));
+  const m=mk('span','meta');m.append(mk('b','',String(s.i.length)),document.createTextNode(' works'));
+  b.append(fan,mk('span','no',yr),h,m);b.addEventListener('click',()=>NA.open(s.i[0],b,s.i));$('series').append(b);
+});
+$('s-n').textContent=D.series.length+' series, '+inS+' works';$('w-n').textContent=W.length;
+W.forEach((w,i)=>{const b=mk('button','work');b.type='button';b.setAttribute('aria-label',NA.label(w));
+  const m=mk('span','mat');m.append(NA.thumb(w));const c=mk('span','t',w.t);if(w.y)c.append(mk('span','y',String(w.y)));
+  b.append(m,c);b.addEventListener('click',()=>NA.open(i,b));$('grid').append(b);});
+})();
+</script>
+</body>
+</html>
